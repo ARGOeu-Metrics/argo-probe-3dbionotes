@@ -32,4 +32,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
-%{_libexecdir}/argo/probes/webodv/*.py[o,c]
+%dir %{_libexecdir}/argo/probes/3dbionotes/
+%{_libexecdir}/argo/probes/3dbionotes/*.py
