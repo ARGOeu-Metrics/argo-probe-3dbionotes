@@ -1,3 +1,4 @@
+%global __python %{python3}
 %define underscore() %(echo %1 | sed 's/-/_/g')
 
 Summary:       ARGO probe that checks if 3DBionotes web application is working as expected
