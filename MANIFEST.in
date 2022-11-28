@@ -1,0 +1,2 @@
+include src/*
+include argo-probe-3dbionotes.spec
