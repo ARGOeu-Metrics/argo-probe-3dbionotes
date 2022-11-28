@@ -1,3 +1,4 @@
+%global __python %{python3}
 %define underscore() %(echo %1 | sed 's/-/_/g')
 
 Summary:       ARGO probe that checks if 3DBionotes web application is working as expected
@@ -31,4 +32,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
-%{_libexecdir}/argo/probes/webodv/*.py[o,c]
+%dir %{_libexecdir}/argo/probes/3dbionotes/
+%{_libexecdir}/argo/probes/3dbionotes/*.py
